@@ -13,5 +13,69 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YANImagePickerController/ImagePickerController/Controller/YANPreviewCollectionController.m"
+            timestampString = "524384123.038922"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "-bottomSendViewClickSendPhoto"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YANImagePickerController/ImagePickerController/Controller/YANNavigationViewController.m"
+            timestampString = "524384127.307085"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-artworkMaster"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__44-[YANNavigationViewController artworkMaster]_block_invoke"
+                  moduleName = "YANImagePickerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ica/Desktop/YANImagePickerController/YANImagePickerController/ImagePickerController/Controller/YANNavigationViewController.m"
+                  timestampString = "524384585.796916"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__44-[YANNavigationViewController artworkMaster]_block_invoke_2"
+                  moduleName = "YANImagePickerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ica/Desktop/YANImagePickerController/YANImagePickerController/ImagePickerController/Controller/YANNavigationViewController.m"
+                  timestampString = "524384585.799299"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
