@@ -8,24 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		4829FE971F395AD500010EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FE961F395AD500010EF1 /* main.m */; };
-		4829FE9A1F395AD500010EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FE991F395AD500010EF1 /* AppDelegate.m */; };
-		4829FE9D1F395AD500010EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FE9C1F395AD500010EF1 /* ViewController.m */; };
 		4829FEA01F395AD500010EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4829FE9E1F395AD500010EF1 /* Main.storyboard */; };
 		4829FEA21F395AD500010EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4829FEA11F395AD500010EF1 /* Assets.xcassets */; };
 		4829FEA51F395AD500010EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4829FEA31F395AD500010EF1 /* LaunchScreen.storyboard */; };
+		4829FEB11F395B0500010EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FEAE1F395B0500010EF1 /* AppDelegate.m */; };
+		4829FEB21F395B0500010EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FEB01F395B0500010EF1 /* ViewController.m */; };
+		4829FED31F39A1CB00010EF1 /* YANAlbumListTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FED21F39A1CB00010EF1 /* YANAlbumListTableController.m */; };
+		4829FED61F39A1EF00010EF1 /* YANNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FED51F39A1EF00010EF1 /* YANNavigationViewController.m */; };
+		4829FEE51F39AF4700010EF1 /* YANPreviewCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FEE41F39AF4700010EF1 /* YANPreviewCollectionController.m */; };
+		4829FEE81F39B42500010EF1 /* YANAlbumManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FEE71F39B42500010EF1 /* YANAlbumManage.m */; };
+		4829FEEB1F39B44100010EF1 /* YANAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829FEEA1F39B44100010EF1 /* YANAlbumModel.m */; };
+		4876D8C81F3D8FDF0013B843 /* backNav.png in Resources */ = {isa = PBXBuildFile; fileRef = 4876D8C51F3D8FDF0013B843 /* backNav.png */; };
+		4876D8C91F3D8FDF0013B843 /* backNav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4876D8C61F3D8FDF0013B843 /* backNav@2x.png */; };
+		4876D8CA1F3D8FDF0013B843 /* backNav@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4876D8C71F3D8FDF0013B843 /* backNav@3x.png */; };
+		4876D8CD1F3D9BDC0013B843 /* YANBottomSendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876D8CC1F3D9BDC0013B843 /* YANBottomSendView.m */; };
+		48B19B0E1F3C003C00D8BBDD /* YANPreviewCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B19B0D1F3C003C00D8BBDD /* YANPreviewCollectionCell.m */; };
+		48B19B111F3C051A00D8BBDD /* YANAlbumListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B19B101F3C051A00D8BBDD /* YANAlbumListTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4829FE921F395AD500010EF1 /* YANImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YANImagePickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4829FE961F395AD500010EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4829FE981F395AD500010EF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4829FE991F395AD500010EF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4829FE9B1F395AD500010EF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4829FE9C1F395AD500010EF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4829FE9F1F395AD500010EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4829FEA11F395AD500010EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4829FEA41F395AD500010EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4829FEA61F395AD500010EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4829FEAD1F395B0500010EF1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4829FEAE1F395B0500010EF1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4829FEAF1F395B0500010EF1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4829FEB01F395B0500010EF1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4829FEC71F399C3E00010EF1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		4829FEC91F399C4B00010EF1 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		4829FED11F39A1CB00010EF1 /* YANAlbumListTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANAlbumListTableController.h; sourceTree = "<group>"; };
+		4829FED21F39A1CB00010EF1 /* YANAlbumListTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANAlbumListTableController.m; sourceTree = "<group>"; };
+		4829FED41F39A1EF00010EF1 /* YANNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANNavigationViewController.h; sourceTree = "<group>"; };
+		4829FED51F39A1EF00010EF1 /* YANNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANNavigationViewController.m; sourceTree = "<group>"; };
+		4829FEE31F39AF4700010EF1 /* YANPreviewCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANPreviewCollectionController.h; sourceTree = "<group>"; };
+		4829FEE41F39AF4700010EF1 /* YANPreviewCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANPreviewCollectionController.m; sourceTree = "<group>"; };
+		4829FEE61F39B42500010EF1 /* YANAlbumManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANAlbumManage.h; sourceTree = "<group>"; };
+		4829FEE71F39B42500010EF1 /* YANAlbumManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANAlbumManage.m; sourceTree = "<group>"; };
+		4829FEE91F39B44100010EF1 /* YANAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANAlbumModel.h; sourceTree = "<group>"; };
+		4829FEEA1F39B44100010EF1 /* YANAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANAlbumModel.m; sourceTree = "<group>"; };
+		4829FEEC1F39B7A300010EF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4876D8C51F3D8FDF0013B843 /* backNav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backNav.png; sourceTree = "<group>"; };
+		4876D8C61F3D8FDF0013B843 /* backNav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backNav@2x.png"; sourceTree = "<group>"; };
+		4876D8C71F3D8FDF0013B843 /* backNav@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backNav@3x.png"; sourceTree = "<group>"; };
+		4876D8CB1F3D9BDC0013B843 /* YANBottomSendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANBottomSendView.h; sourceTree = "<group>"; };
+		4876D8CC1F3D9BDC0013B843 /* YANBottomSendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANBottomSendView.m; sourceTree = "<group>"; };
+		48B19B0C1F3C003C00D8BBDD /* YANPreviewCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANPreviewCollectionCell.h; sourceTree = "<group>"; };
+		48B19B0D1F3C003C00D8BBDD /* YANPreviewCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANPreviewCollectionCell.m; sourceTree = "<group>"; };
+		48B19B0F1F3C051A00D8BBDD /* YANAlbumListTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANAlbumListTableCell.h; sourceTree = "<group>"; };
+		48B19B101F3C051A00D8BBDD /* YANAlbumListTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANAlbumListTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +77,7 @@
 			children = (
 				4829FE941F395AD500010EF1 /* YANImagePickerController */,
 				4829FE931F395AD500010EF1 /* Products */,
+				4829FEC61F399C3E00010EF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +92,8 @@
 		4829FE941F395AD500010EF1 /* YANImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				4829FE981F395AD500010EF1 /* AppDelegate.h */,
-				4829FE991F395AD500010EF1 /* AppDelegate.m */,
-				4829FE9B1F395AD500010EF1 /* ViewController.h */,
-				4829FE9C1F395AD500010EF1 /* ViewController.m */,
+				4829FEB31F395B3800010EF1 /* ImagePickerController */,
+				4829FEAC1F395B0500010EF1 /* RootController */,
 				4829FE9E1F395AD500010EF1 /* Main.storyboard */,
 				4829FEA11F395AD500010EF1 /* Assets.xcassets */,
 				4829FEA31F395AD500010EF1 /* LaunchScreen.storyboard */,
@@ -77,6 +109,85 @@
 				4829FE961F395AD500010EF1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4829FEAC1F395B0500010EF1 /* RootController */ = {
+			isa = PBXGroup;
+			children = (
+				4829FEAD1F395B0500010EF1 /* AppDelegate.h */,
+				4829FEAE1F395B0500010EF1 /* AppDelegate.m */,
+				4829FEAF1F395B0500010EF1 /* ViewController.h */,
+				4829FEB01F395B0500010EF1 /* ViewController.m */,
+			);
+			path = RootController;
+			sourceTree = "<group>";
+		};
+		4829FEB31F395B3800010EF1 /* ImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4876D8C41F3D8FDF0013B843 /* Image */,
+				4829FEB41F395B3800010EF1 /* Controller */,
+				4829FEB51F395B3800010EF1 /* Model */,
+				4829FEB61F395B3800010EF1 /* View */,
+			);
+			path = ImagePickerController;
+			sourceTree = "<group>";
+		};
+		4829FEB41F395B3800010EF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4829FED11F39A1CB00010EF1 /* YANAlbumListTableController.h */,
+				4829FED21F39A1CB00010EF1 /* YANAlbumListTableController.m */,
+				4829FED41F39A1EF00010EF1 /* YANNavigationViewController.h */,
+				4829FED51F39A1EF00010EF1 /* YANNavigationViewController.m */,
+				4829FEE31F39AF4700010EF1 /* YANPreviewCollectionController.h */,
+				4829FEE41F39AF4700010EF1 /* YANPreviewCollectionController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4829FEB51F395B3800010EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4829FEE61F39B42500010EF1 /* YANAlbumManage.h */,
+				4829FEE71F39B42500010EF1 /* YANAlbumManage.m */,
+				4829FEE91F39B44100010EF1 /* YANAlbumModel.h */,
+				4829FEEA1F39B44100010EF1 /* YANAlbumModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4829FEB61F395B3800010EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48B19B0C1F3C003C00D8BBDD /* YANPreviewCollectionCell.h */,
+				48B19B0D1F3C003C00D8BBDD /* YANPreviewCollectionCell.m */,
+				48B19B0F1F3C051A00D8BBDD /* YANAlbumListTableCell.h */,
+				48B19B101F3C051A00D8BBDD /* YANAlbumListTableCell.m */,
+				4876D8CB1F3D9BDC0013B843 /* YANBottomSendView.h */,
+				4876D8CC1F3D9BDC0013B843 /* YANBottomSendView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4829FEC61F399C3E00010EF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4829FEEC1F39B7A300010EF1 /* CoreGraphics.framework */,
+				4829FEC91F399C4B00010EF1 /* PhotosUI.framework */,
+				4829FEC71F399C3E00010EF1 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4876D8C41F3D8FDF0013B843 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4876D8C51F3D8FDF0013B843 /* backNav.png */,
+				4876D8C61F3D8FDF0013B843 /* backNav@2x.png */,
+				4876D8C71F3D8FDF0013B843 /* backNav@3x.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +221,7 @@
 				TargetAttributes = {
 					4829FE911F395AD500010EF1 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59VENSGPGV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,9 +249,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4876D8C81F3D8FDF0013B843 /* backNav.png in Resources */,
 				4829FEA51F395AD500010EF1 /* LaunchScreen.storyboard in Resources */,
 				4829FEA21F395AD500010EF1 /* Assets.xcassets in Resources */,
 				4829FEA01F395AD500010EF1 /* Main.storyboard in Resources */,
+				4876D8CA1F3D8FDF0013B843 /* backNav@3x.png in Resources */,
+				4876D8C91F3D8FDF0013B843 /* backNav@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +265,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4829FE9D1F395AD500010EF1 /* ViewController.m in Sources */,
-				4829FE9A1F395AD500010EF1 /* AppDelegate.m in Sources */,
+				4829FEE51F39AF4700010EF1 /* YANPreviewCollectionController.m in Sources */,
+				4829FEB11F395B0500010EF1 /* AppDelegate.m in Sources */,
+				4829FED31F39A1CB00010EF1 /* YANAlbumListTableController.m in Sources */,
+				4829FEE81F39B42500010EF1 /* YANAlbumManage.m in Sources */,
+				48B19B0E1F3C003C00D8BBDD /* YANPreviewCollectionCell.m in Sources */,
+				48B19B111F3C051A00D8BBDD /* YANAlbumListTableCell.m in Sources */,
+				4829FEEB1F39B44100010EF1 /* YANAlbumModel.m in Sources */,
 				4829FE971F395AD500010EF1 /* main.m in Sources */,
+				4829FEB21F395B0500010EF1 /* ViewController.m in Sources */,
+				4829FED61F39A1EF00010EF1 /* YANNavigationViewController.m in Sources */,
+				4876D8CD1F3D9BDC0013B843 /* YANBottomSendView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +397,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59VENSGPGV;
 				INFOPLIST_FILE = YANImagePickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yan.liu.YANImagePickerController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,7 +410,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59VENSGPGV;
 				INFOPLIST_FILE = YANImagePickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yan.liu.YANImagePickerController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -311,6 +438,7 @@
 				4829FEAB1F395AD500010EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
