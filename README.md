@@ -40,6 +40,18 @@
  // 获取选择的原图，点击发送时调用,
  - (void)navigationViewControllerDisposeImage:(UIImage *)sendImage;
  ```
+- 说明
+
+ YANAlbumListTableController 相册列表控制器
+ 
+ YANNavigationViewController 导航控制器
+ 
+ YANPreviewCollectionController 照片列表控制器
+ 
+ YANPreviewCollectionCell 照片item
+ 
+ YANAlbumListTableCell 相册列表cell
+
 
 ![image](https://github.com/dreamGrilCode/YANImagePickerController/blob/master/image/2.png)
 ![image](https://github.com/dreamGrilCode/YANImagePickerController/blob/master/image/1.jpg)
