@@ -19,10 +19,6 @@
 // 设置数据
 - (UILabel *)setImage:(id)asset selectImageArray:(NSArray *)selectImageArray;
 
-@property(nonatomic, weak) UIColor *textColor;
-
-@property(nonatomic, weak) UIColor *backgroundTextColor;
-
 @property (weak, nonatomic) id <YANPreviewCollectionCellDelegate> delegate_;
 
 @end

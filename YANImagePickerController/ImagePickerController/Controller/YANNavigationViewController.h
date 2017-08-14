@@ -19,8 +19,12 @@
 
 /**
  初始化
+
+ @param rowHeight 相册列表页面cell高度 默认值为65
+ @param columnNumber 预览页面列数 默认为4
+ @param previewSpacing 预览页面cell间距 默认为2
  */
-+ (YANNavigationViewController *)navigationViewController;
++ (YANNavigationViewController *)navigationViewControllerRowHeight:(CGFloat)rowHeight columnNumber:(NSInteger)columnNumber previewSpacing:(CGFloat)previewSpacing;
 
 /**
  添加右侧‘取消’按钮
@@ -34,20 +38,11 @@
  */
 - (void(^)(NSArray *))artworkMaster;
 
-/** 相册列表页面cell高度 默认值为65**/
-@property(nonatomic, assign)CGFloat rowHeight;
 /**
  预览页面最大选择数,默认值为3
  */
 @property(nonatomic, assign) NSInteger maxSelectImageCount;
-/** 预览页面选择标签文字颜色，默认值为白色**/
-@property(nonatomic, weak) UIColor *textColor;
-/** 预览页面选择标签背景色**/
-@property(nonatomic, weak) UIColor *backgroundTextColor;
-/** 预览页面cell间距 默认为2**/
-@property(nonatomic, assign)CGFloat previewSpacing;
-/** 预览页面列数 默认为4**/
-@property(nonatomic, assign)NSInteger columnNumber;
+
 
 @property (weak, nonatomic) id <YANNavigationViewControllerDelegate> delegate_;
 

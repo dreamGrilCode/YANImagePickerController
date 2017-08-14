@@ -30,10 +30,10 @@
 
 static NSString *identifier = @"albumCell";
 @implementation YANAlbumListTableController
-+(UINavigationController *)albumListTableController{
++(UINavigationController *)albumListTableControllerRowHeight:(CGFloat)rowHeight columnNumber:(NSInteger)columnNumber previewSpacing:(CGFloat)previewSpacing{
     
-    YANNavigationViewController *navVC = [[YANNavigationViewController alloc] initWithRootViewController:[[self alloc] init]];
-    YANPreviewCollectionController *previewCC = [[YANPreviewCollectionController alloc] init];
+    YANNavigationViewController *navVC = [[YANNavigationViewController alloc] initWithRootViewController:[[self alloc] initWithRowHeight:rowHeight columnNumber:columnNumber previewSpacing:previewSpacing]];
+    YANPreviewCollectionController *previewCC = [[YANPreviewCollectionController alloc] initWithColumnNumber:columnNumber previewSpacing:previewSpacing];
     __weak typeof(YANPreviewCollectionController *)weakPreviewCC = previewCC;
     [[YANAlbumManage defaultManager] getCameraRollAlbumAllowPickingImageCompletion:^(YANAlbumModel *model) {
         weakPreviewCC.model = model;
@@ -43,6 +43,15 @@ static NSString *identifier = @"albumCell";
     return navVC;
     
 }
+- (instancetype)initWithRowHeight:(CGFloat)rowHeight columnNumber:(NSInteger)columnNumber previewSpacing:(CGFloat)previewSpacing{
+
+    if (self = [super init]) {
+        self.rowHeight = rowHeight;
+        self.previewSpacing = previewSpacing;
+        self.columnNumber = columnNumber;
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.backgroundColor = [UIColor whiteColor];
@@ -50,11 +59,9 @@ static NSString *identifier = @"albumCell";
     [self.tableView registerClass:[YANAlbumListTableCell class] forCellReuseIdentifier:identifier];
     self.navigationItem.title = @"相册";
     
-
     YANNavigationViewController *navVC = (YANNavigationViewController *)self.navigationController;
     [navVC addLeftCancleToViewController:self];
-    self.tableView.rowHeight = navVC.rowHeight > 0 ? navVC.rowHeight : defaultRowHeight;
-    
+    self.tableView.rowHeight = self.rowHeight > 0 ? self.rowHeight : defaultRowHeight;
     __weak typeof(self)weakSelf = self;
     [[YANAlbumManage defaultManager] getAllAlbumsCompletion:^(NSArray<YANAlbumModel *> *models) {
         weakSelf.albumArray = models;
@@ -85,7 +92,7 @@ static NSString *identifier = @"albumCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     YANAlbumModel *model = self.albumArray[indexPath.row];
-    YANPreviewCollectionController *previewCC = [[YANPreviewCollectionController alloc] init];
+    YANPreviewCollectionController *previewCC = [[YANPreviewCollectionController alloc] initWithColumnNumber:self.columnNumber previewSpacing:self.previewSpacing];
     previewCC.navigationItem.title = model.name;
     previewCC.model = model;
     [self.navigationController pushViewController:previewCC animated:YES];

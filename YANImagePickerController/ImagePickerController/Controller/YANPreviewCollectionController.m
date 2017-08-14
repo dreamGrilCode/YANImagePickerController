@@ -24,10 +24,6 @@
 @property(nonatomic, weak) YANBottomSendView *sendView;
 /** 最多选中的图片数 **/
 @property(nonatomic, assign) NSInteger maxSelectImageCount;
-/** 选中的样式**/
-@property(nonatomic, weak) UIColor *textColor;
-/** 选中的样式**/
-@property(nonatomic, weak) UIColor *backgroundTextColor;
 /** 间距 **/
 @property(nonatomic, assign)CGFloat previewSpacing;
 /** 列数 **/
@@ -56,14 +52,10 @@ static NSString * const reuseIdentifier = @"previewCell";
     }
     return _selectLabelArray;
 }
-- (instancetype)init{
+- (instancetype)initWithColumnNumber:(NSInteger)columnNumber previewSpacing:(CGFloat)previewSpacing{
     
-    YANNavigationViewController *navVC = (YANNavigationViewController *)self.navigationController;
-    self.textColor = navVC.textColor;
-    self.backgroundTextColor = navVC.backgroundTextColor;
-    self.maxSelectImageCount = navVC.maxSelectImageCount > 0 ? navVC.maxSelectImageCount:defaultMaxSelectCount;
-    self.previewSpacing = navVC.previewSpacing > 0 ? navVC.previewSpacing : defaultColumnNumber;
-    self.columnNumber = navVC.columnNumber > 0 ? navVC.columnNumber : defaultColumnNumber;
+    self.previewSpacing = previewSpacing > 0 ? previewSpacing : defaultColumnNumber;
+    self.columnNumber = columnNumber > 0 ? columnNumber : defaultColumnNumber;
 
     CGFloat itemW = ([UIScreen mainScreen].bounds.size.width - (self.columnNumber-1) * self.previewSpacing) / self.columnNumber;
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -82,6 +74,7 @@ static NSString * const reuseIdentifier = @"previewCell";
     self.collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, bottomViewHeight, 0);
     YANNavigationViewController *navVC = (YANNavigationViewController *)self.navigationController;
     [navVC addLeftCancleToViewController:self];
+    self.maxSelectImageCount = navVC.maxSelectImageCount > 0 ? navVC.maxSelectImageCount:defaultMaxSelectCount;
     
     __weak typeof(self)weakSelf = self;
     [[YANAlbumManage defaultManager] getAssetsFromFetchResult:self.model.result completion:^(NSArray *photoArray) {
@@ -125,8 +118,6 @@ static NSString * const reuseIdentifier = @"previewCell";
     if (!cell) {
         cell = [[YANPreviewCollectionCell alloc] init];
     }
-    cell.textColor = self.textColor;
-    cell.backgroundTextColor = self.backgroundTextColor;
     cell.delegate_ = self;
     UILabel *label = [cell setImage:self.contentArray[indexPath.row] selectImageArray:self.selectImageArray];
     if (!label.isHidden) {
@@ -167,9 +158,12 @@ static NSString * const reuseIdentifier = @"previewCell";
 #pragma mark - YANBottomSendViewDelegate
 - (void)bottomSendViewClickSendPhoto{
 
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-    YANNavigationViewController *navVC = (YANNavigationViewController *)self.navigationController;
-    navVC.artworkMaster(self.selectImageArray);
+    if (self.selectImageArray.count > 0) {
+        
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        YANNavigationViewController *navVC = (YANNavigationViewController *)self.navigationController;
+        navVC.artworkMaster(self.selectImageArray);
+    }
 }
 
 @end

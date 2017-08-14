@@ -18,9 +18,9 @@
 @end
 
 @implementation YANNavigationViewController
-+ (YANNavigationViewController *)navigationViewController{
++ (YANNavigationViewController *)navigationViewControllerRowHeight:(CGFloat)rowHeight columnNumber:(NSInteger)columnNumber previewSpacing:(CGFloat)previewSpacing{
 
-    return (YANNavigationViewController *)[YANAlbumListTableController albumListTableController];
+    return (YANNavigationViewController *)[YANAlbumListTableController albumListTableControllerRowHeight:rowHeight columnNumber:columnNumber previewSpacing:previewSpacing];
 }
 
 - (void)viewDidLoad {

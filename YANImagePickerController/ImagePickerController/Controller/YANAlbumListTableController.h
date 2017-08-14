@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YANAlbumListTableController : UITableViewController
-+(UINavigationController *)albumListTableController;
++(UINavigationController *)albumListTableControllerRowHeight:(CGFloat)rowHeight columnNumber:(NSInteger)columnNumber previewSpacing:(CGFloat)previewSpacing ;
 @end

@@ -54,10 +54,10 @@
                 if (status == PHAuthorizationStatusAuthorized) {
                     dispatch_async(dispatch_get_main_queue(), ^{
                         
-                        YANNavigationViewController *rootVC = [YANNavigationViewController navigationViewController];
+                        YANNavigationViewController *rootVC = [YANNavigationViewController navigationViewControllerRowHeight:65 columnNumber:3 previewSpacing:10];
                         rootVC.delegate_ = self;
+                        rootVC.maxSelectImageCount = 6;
                         [self presentViewController:rootVC animated:YES completion:^{
-                            
                         }];
 
                     });

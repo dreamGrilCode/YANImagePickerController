@@ -10,6 +10,7 @@
 @class YANAlbumModel;
 @interface YANPreviewCollectionController : UICollectionViewController
 
+- (instancetype)initWithColumnNumber:(NSInteger)columnNumber previewSpacing:(CGFloat)previewSpacing;
 @property (nonatomic, strong) YANAlbumModel *model;
 
 @end

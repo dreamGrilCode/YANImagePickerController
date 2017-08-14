@@ -37,10 +37,10 @@
         
         CGFloat labW  = 20;
         UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(imageView.bounds.size.width - labW, 0, labW, labW)];
-        lab.backgroundColor = self.backgroundTextColor == nil ? defaultBackgroundTextColor :self.backgroundTextColor;
+        lab.backgroundColor =  defaultBackgroundTextColor;
         lab.font = [UIFont systemFontOfSize:14];
         lab.textAlignment = NSTextAlignmentCenter;
-        lab.textColor = self.textColor == nil ? defaultTextColor:self.textColor;
+        lab.textColor = defaultTextColor;
         [imageView addSubview:lab];
         lab.hidden = YES;
         
