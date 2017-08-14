@@ -81,7 +81,9 @@
         for (id asset in imageArray) {
             [[YANAlbumManage defaultManager] getOriginalPhotoWithAsset:asset completion:^(UIImage *photo, NSDictionary *info) {
                 if ([weakSelf.delegate_ respondsToSelector:@selector(navigationViewControllerDisposeImage:)]) {
-                    [weakSelf.delegate_ navigationViewControllerDisposeImage:photo];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [weakSelf.delegate_ navigationViewControllerDisposeImage:photo];
+                    });
                 }
             }];
         }

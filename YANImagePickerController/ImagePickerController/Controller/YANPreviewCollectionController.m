@@ -161,8 +161,11 @@ static NSString * const reuseIdentifier = @"previewCell";
     if (self.selectImageArray.count > 0) {
         
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-        YANNavigationViewController *navVC = (YANNavigationViewController *)self.navigationController;
-        navVC.artworkMaster(self.selectImageArray);
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            
+            YANNavigationViewController *navVC = (YANNavigationViewController *)self.navigationController;
+            navVC.artworkMaster(self.selectImageArray);
+        });
     }
 }
 
